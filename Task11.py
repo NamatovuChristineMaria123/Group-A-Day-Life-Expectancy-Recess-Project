@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.model_selection import cross_val_score, KFold
 from sklearn.linear_model import LinearRegression
 
-# Load the engineered dataset
+
 df = pd.read_csv("Life_Expectancy_Engineered.csv")
 df.columns = df.columns.str.strip()
 
@@ -29,6 +29,6 @@ print(f"Mean R²: {cv_scores.mean():.4f}")
 print(f"Std Dev of R²: {cv_scores.std():.4f}")
 
 if cv_scores.mean() > 0.6:
-    print("\n✅ The model generalizes well across folds.")
+    print("\n The model generalizes well across folds.")
 else:
-    print("\n⚠️ The model might need tuning for better generalization.")
+    print("\n The model might need tuning for better generalization.")

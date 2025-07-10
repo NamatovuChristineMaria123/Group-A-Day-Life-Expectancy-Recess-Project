@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 
-# Load data
+
 df = pd.read_csv("Life_Expectancy_Data.csv")
 
 # Remove leading/trailing spaces from column names
