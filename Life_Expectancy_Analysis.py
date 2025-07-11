@@ -1,21 +1,19 @@
-==
-# TASK 1:Data Exploration
-
+# TASK 1: Data Exploration
 
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-
+# Load dataset
 df = pd.read_csv("Life_Expectancy_Data.csv")
 
-hape
+# Shape of dataset
 print("Shape of dataset:", df.shape)
 
-
+# First few rows
 print("\nFirst 5 rows:\n", df.head())
 
-
+# Dataframe info
 print("\nInfo:\n")
 df.info()
 
